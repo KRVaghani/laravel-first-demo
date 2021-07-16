@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\DataController;
+use App\Http\Controllers\ArithController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +25,13 @@ Route::get('/hello', function () {
 Route::get('/myfile', function () {
     return view('myfile');
 });
+
+
+Route::get('user',[UserController::class,'show']);
+Route::get('data',[DataController::class,'hello']);
+
+Route::get('hide/{id}',[UserController::class,'hide']);
+
+Route::get('add/{number}/{b}',[ArithController::class,'Addition']);
+
+
