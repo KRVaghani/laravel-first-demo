@@ -27,11 +27,11 @@ Route::get('/myfile', function () {
 });
 
 
-// Route::get('user',[UserController::class,'show']);
-// Route::get('data',[DataController::class,'hello']);
+Route::get('user',[UserController::class,'show']);
+Route::get('data',[DataController::class,'hello']);
 
-// Route::get('hide/{id}',[UserController::class,'hide']);
+Route::get('hide/{id}',[UserController::class,'hide']);
 
-// Route::get('add/{number}/{b}',[ArithController::class,'Addition']);
+Route::get('add/{number}/{b}',[ArithController::class,'Addition']);
 
 
